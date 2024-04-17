@@ -33,6 +33,10 @@ nav a{
     color: rgba(153, 23, 75, 0.486); ;
 }
 
+a:hover{
+ color: rgb(117, 8, 41);
+}
+
 .button{
     float: right;
     margin-right: 10%;
@@ -46,7 +50,11 @@ nav a{
     color: white;
     font-weight: 400;
     border-radius: 2px;
+    cursor: pointer;
 
+}
+.button:hover{
+    background-color: rgba(118, 3, 51, 0.947) ;
 }
 
 .tagline{
@@ -57,14 +65,24 @@ nav a{
 .tagline h1{
     width: 40%;
     font-size: 35px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    color: rgb(61, 5, 21) ;
 }
 
 .tagline p{
-    width: 50%;
+
+    margin-top: 25px;
+    width: 45%;
+    line-height: 1.5;
+    color: rgb(43, 4, 15) ;
+    font-weight: 500;
+
 }
 
 .tagline{
-    margin-left: 15%;
+    margin-left: 12%;
 }
 section img{
     margin-top: 2%;
@@ -74,18 +92,35 @@ section img{
     margin-left: -20%;
 }
 nav .fa-bars{
+
+    display: none;
+  
+}
+
+hr{
     display: none;
 }
 
+.tagline span{
+    color:rgba(174, 18, 83, 0.63) ;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
 section input{
     border: none;
     padding-left: 20px;
     padding-right: 80px;
     padding-top: 8px;
     padding-bottom: 8px;
-    background-color: rgba(243, 209, 223, 0.384); ;
+    background-color: rgba(243, 209, 223, 0.384); 
+    
+}
+#form-source{
+   
 }
 section .button2 {
+    cursor: pointer;
     border: none;
     padding-left: 20px;
     padding-right: 20px;
@@ -94,7 +129,7 @@ section .button2 {
     background-color: rgb(117, 8, 41);
     color: white;
     font-weight: 400;
-    border-radius: 2px;
+   
     margin-left: -5px;
 }
 
@@ -102,16 +137,69 @@ section .button2 {
     
     body{
         margin: 0;
-
+        padding: 0;
     }
 
-    header nav{
-        align-items: center;
-    }
-    nav .logo{
+ nav li {
+    display: none;
+ }
 
-        font-size: 50px;
+ .button{
+    display: none;
+ }
 
-    }
+ nav .fa-bars {
+    font-size: 30px;
+    position: relative;
+    top: -25px;
+    left: 20px;
+    color: rgb(117, 8, 41); ;
+    display: block;
+
+ }
+
+ .logo {
+    text-align: center;
+    font-size: 35px;
+    margin-top: 10px;
+  
+ }
+
+ hr{
+    display: block;
+    
+ }
+
+ .tagline h1{
+    width: 100%;
+    font-size: 50px;
+ }
+ .tagline p {
+    width: 95%;
+    font-size: 20px;
+    text-align: justify;
+ }
+
+ section input{
+    display: flex;
+    flex-direction: column;
+    padding-right: 50%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: left;
+    font-size: 15px;
+
+   
+ }
+
+ section .button2{
+
+    margin-top: 5%;
+    padding: 3% 41%;
+    margin-left: 0.5px;
+    font-weight: bold;
+    font-size: 18px;
+
+ }
 }
 
