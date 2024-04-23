@@ -201,5 +201,13 @@ section .button2 {
     font-size: 18px;
 
  }
+
+ section img{
+    margin-top: 2%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+   margin-left: 20%;
+}
 }
 
